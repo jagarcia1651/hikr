@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import LoginButton from './login'
-import LogoutButton from './logout'
-import Profile from './profile'
+import Navbar from './navbar'
 
 export const siteTitle = 'Hikr'
 
@@ -10,16 +9,10 @@ export default function Layout({ children, home }) {
     <div>
       <Head>
         <title>{siteTitle}</title>
+        <Navbar></Navbar>
       </Head>
-        <LoginButton>
-
-        </LoginButton>
-        <Profile>
-
-        </Profile>
-        <LogoutButton>
-
-        </LogoutButton>
+      
+      <LoginButton></LoginButton>
   </div>
   )
 }
